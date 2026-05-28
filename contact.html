@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Consultation Gratuite — BeautyMed Tunisia</title>
+  <meta name="description" content="Contactez BeautyMed Tunisia pour votre consultation gratuite en chirurgie esthétique. Formulaire en ligne, téléphone, WhatsApp — réponse sous 24h." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header id="header" role="banner">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo"><div class="logo-emblem">B</div><div class="logo-txt"><span class="logo-name">BeautyMed</span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <div class="nav-dropdown"><a href="visage.html" class="nav-parent">Visage <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="visage.html#rhinoplastie">Rhinoplastie</a><a href="visage.html#blepharoplastie">Blépharoplastie</a><a href="visage.html#lifting">Lifting Facial</a><a href="visage.html#otoplastie">Otoplastie</a></div></div>
+      <a href="silhouette.html">Silhouette</a><a href="seins.html">Seins</a><a href="medecine.html">Médecine Esthétique</a><a href="forfaits.html">Forfaits</a><a href="chirurgiens.html">Chirurgiens</a><a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-right"><div class="lang-toggle"><button class="lang-btn active">FR</button><button class="lang-btn">EN</button><button class="lang-btn">AR</button></div><a href="contact.html" class="btn btn-gold nav-cta"><i class="fas fa-calendar-check"></i> Consultation</a></div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav"><a href="index.html">Accueil</a><a href="visage.html">Visage</a><a href="silhouette.html">Silhouette</a><a href="seins.html">Seins</a><a href="medecine.html">Médecine Esthétique</a><a href="forfaits.html">Forfaits</a><a href="chirurgiens.html">Chirurgiens</a><a href="contact.html" class="btn btn-gold">Consultation gratuite</a></nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80');"></div>
+  <div class="page-hero-content container">
+    <span class="eyebrow">Nous Contacter</span>
+    <h1>Consultation Gratuite</h1>
+    <p>Parlez à un conseiller médical dédié. Gratuit, sans engagement, réponse garantie sous 24h.</p>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="form-shell reveal-left">
+        <h3>Demandez Votre Devis Personnalisé</h3>
+        <p>Remplissez le formulaire et un coordinateur vous contacte sous 24h.</p>
+        <form class="contact-form" novalidate>
+          <div class="f-grid">
+            <div class="f-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required /></div>
+            <div class="f-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Votre nom" required /></div>
+            <div class="f-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.com" required /></div>
+            <div class="f-group"><label for="telephone">Téléphone / WhatsApp</label><input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" /></div>
+            <div class="f-group"><label for="pays">Pays de résidence</label><select id="pays" name="pays"><option value="">Sélectionnez votre pays</option><option>France</option><option>Belgique</option><option>Suisse</option><option>Canada</option><option>Luxembourg</option><option>Autre</option></select></div>
+            <div class="f-group"><label for="procedure">Intervention souhaitée</label><select id="procedure" name="procedure"><option value="">Sélectionnez une intervention</option><optgroup label="Visage"><option>Rhinoplastie</option><option>Blépharoplastie</option><option>Lifting facial</option><option>Otoplastie</option><option>Mentoplastie</option></optgroup><optgroup label="Silhouette"><option>Liposuccion</option><option>Abdominoplastie</option><option>BBL</option><option>Lifting des bras/cuisses</option></optgroup><optgroup label="Seins"><option>Augmentation mammaire</option><option>Lifting des seins</option><option>Réduction mammaire</option></optgroup><optgroup label="Médecine esthétique"><option>Botox</option><option>Acide hyaluronique</option><option>Mésothérapie / PRP</option><option>Peeling</option></optgroup></select></div>
+            <div class="f-group"><label for="date">Date souhaitée (approximative)</label><input type="month" id="date" name="date" /></div>
+            <div class="f-group"><label for="forfait">Forfait envisagé</label><select id="forfait" name="forfait"><option value="">Sélectionnez un forfait</option><option>Pack Essentiel</option><option>Pack Confort</option><option>Pack Premium</option><option>Je ne sais pas encore</option></select></div>
+            <div class="f-group span2"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Décrivez votre demande, vos attentes ou posez vos questions..."></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-gold f-submit">Envoyer ma demande →</button>
+        </form>
+      </div>
+      <div class="contact-info-col reveal-right">
+        <h3>Nos Coordonnées</h3>
+        <p>Disponibles 7j/7 pour répondre à toutes vos questions.</p>
+        <div class="c-items">
+          <div class="c-item"><div class="c-icon">📞</div><div><span class="c-label">Téléphone</span><span class="c-val">+216 98 000 000<br>+216 71 000 000</span></div></div>
+          <div class="c-item"><div class="c-icon">✉️</div><div><span class="c-label">Email</span><span class="c-val">contact@beautymed.tn<br>devis@beautymed.tn</span></div></div>
+          <div class="c-item"><div class="c-icon">📍</div><div><span class="c-label">Adresse</span><span class="c-val">12 Avenue Habib Bourguiba<br>Tunis 1001, Tunisie</span></div></div>
+          <div class="c-item"><div class="c-icon">🕐</div><div><span class="c-label">Horaires</span><span class="c-val">Lun – Sam : 8h00 – 20h00<br>WhatsApp : 24/7</span></div></div>
+        </div>
+        <button class="wa-cta" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp" style="font-size:1.3rem;"></i> Écrire sur WhatsApp maintenant</button>
+        <div class="socials">
+          <button class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></button>
+          <button class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></button>
+          <button class="soc-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></button>
+          <button class="soc-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></button>
+          <button class="soc-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></button>
+        </div>
+        <div style="margin-top:2.5rem; padding:2rem; background:var(--cream); border-radius:var(--r-md); border:1px solid var(--border);">
+          <h4 style="font-family:var(--font-d); margin-bottom:1rem; font-size:1rem;">Nos Engagements</h4>
+          <ul style="display:flex;flex-direction:column;gap:.7rem;">
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Réponse garantie sous 24h</li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Consultation 100% gratuite</li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Devis transparent, sans surprise</li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Données personnelles protégées (RGPD)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer role="contentinfo"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="index.html" class="nav-logo"><div class="logo-emblem" style="background:linear-gradient(135deg,#C9A96E,#9A7A45);">B</div><div class="logo-txt"><span class="logo-name" style="color:rgba(255,255,255,.9);">BeautyMed</span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a><p>Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p><div class="footer-nl"><input type="email" placeholder="Votre email" aria-label="Email newsletter" /><button type="button">S'abonner</button></div></div><div class="footer-col"><h5>Services</h5><ul><li><a href="visage.html">Chirurgie du Visage</a></li><li><a href="silhouette.html">Chirurgie du Corps</a></li><li><a href="seins.html">Chirurgie des Seins</a></li><li><a href="medecine.html">Médecine Esthétique</a></li><li><a href="forfaits.html">Nos Forfaits</a></li></ul></div><div class="footer-col"><h5>La Société</h5><ul><li><a href="index.html#about">À Propos</a></li><li><a href="chirurgiens.html">Nos Chirurgiens</a></li><li><a href="index.html#garanties">Nos Garanties</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div><div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#">Mentions Légales</a></li><li><a href="#">Politique de Confidentialité</a></li></ul></div></div><div class="footer-bar"><p>© 2025 BeautyMed Tunisia. Tous droits réservés.</p><div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">CGU</a></div></div></div></footer>
+<div class="wa-float"><span class="wa-float-tip">Contactez-nous sur WhatsApp</span><button class="wa-float-btn" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp"></i></button></div>
+<button class="btt"><i class="fas fa-chevron-up"></i></button>
+<div class="cookie" role="alert"><p class="cookie-txt">Nous utilisons des cookies pour améliorer votre expérience. <a href="#">Politique de confidentialité</a>.</p><div class="cookie-btns"><button class="ck-accept">Accepter</button><button class="ck-decline">Refuser</button></div></div>
+<script src="js/main.js"></script>
+</body>
+</html>
