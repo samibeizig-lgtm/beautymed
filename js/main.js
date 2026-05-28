@@ -91,23 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
     counters.forEach(c => io.observe(c));
   })();
 
-  /* ── Service tabs ──────────────────────────────────────── */
-  (function initTabs() {
-    const tabs = document.querySelectorAll('.tab-btn');
-    const panels = document.querySelectorAll('.svc-panel');
-    if (!tabs.length) return;
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const target = tab.dataset.tab;
-        tabs.forEach(t => t.classList.remove('active'));
-        panels.forEach(p => p.classList.remove('active'));
-        tab.classList.add('active');
-        const panel = document.getElementById(target);
-        if (panel) panel.classList.add('active');
-      });
-    });
-  })();
-
   /* ── Testimonials carousel ─────────────────────────────── */
   (function initCarousel() {
     const track   = document.querySelector('.testi-track');
@@ -121,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let autoTimer;
 
     function cardWidth() {
-      return cards[0].offsetWidth + 32; // gap 2rem = 32px
+      return cards[0].offsetWidth + 32;
     }
 
     function createDots() {
@@ -164,7 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── FAQ accordion ─────────────────────────────────────── */
   (function initFAQ() {
     document.querySelectorAll('.faq-item').forEach(item => {
-      item.querySelector('.faq-q').addEventListener('click', () => {
+      const q = item.querySelector('.faq-q');
+      if (!q) return;
+      q.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
         document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
         if (!isOpen) item.classList.add('open');
@@ -178,11 +163,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!banner) return;
     if (localStorage.getItem('bm_cookie') === '1') return;
     setTimeout(() => banner.classList.add('show'), 1200);
-    banner.querySelector('.ck-accept').addEventListener('click', () => {
+    const acceptBtn = banner.querySelector('.ck-accept');
+    const declineBtn = banner.querySelector('.ck-decline');
+    if (acceptBtn) acceptBtn.addEventListener('click', () => {
       localStorage.setItem('bm_cookie', '1');
       banner.classList.remove('show');
     });
-    banner.querySelector('.ck-decline').addEventListener('click', () => {
+    if (declineBtn) declineBtn.addEventListener('click', () => {
       banner.classList.remove('show');
     });
   })();
@@ -197,18 +184,15 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   })();
 
-  /* ── Active nav link on scroll ─────────────────────────── */
+  /* ── Active nav link highlight ─────────────────────────── */
   (function initActiveNav() {
-    const sections = document.querySelectorAll('section[id]');
-    const links = document.querySelectorAll('.nav-links a[href^="#"]');
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
-        }
-      });
-    }, { threshold: 0.4 });
-    sections.forEach(s => io.observe(s));
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.split('#')[0] === currentPath) {
+        link.classList.add('active');
+      }
+    });
   })();
 
   /* ── Form submit (demo) ────────────────────────────────── */
@@ -218,12 +202,23 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', e => {
       e.preventDefault();
       const btn = form.querySelector('.f-submit');
+      if (!btn) return;
       btn.textContent = 'Message envoyé ✓';
       btn.style.background = 'linear-gradient(135deg,#2ecc71,#27ae60)';
       setTimeout(() => {
         btn.textContent = 'Envoyer ma demande →';
         btn.style.background = '';
       }, 4000);
+    });
+  })();
+
+  /* ── Lang toggle ───────────────────────────────────────── */
+  (function initLang() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
     });
   })();
 
