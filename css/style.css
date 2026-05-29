@@ -229,6 +229,11 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.6rem); font-weight: 500; }
 }
 .mobile-nav a:hover { color: var(--gold); }
 .mobile-nav .btn { margin-top: 1rem; }
+.mobile-lang {
+  display: flex; gap: .4rem; margin-top: .5rem;
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: 20px; padding: .3rem .5rem;
+}
 
 /* Hero */
 #hero {
