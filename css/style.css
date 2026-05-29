@@ -24,8 +24,8 @@
   --r-xl:       40px;
   --ease:       all .4s cubic-bezier(.25,.46,.45,.94);
   --ease-fast:  all .2s ease;
-  --font-d:     'Playfair Display', Georgia, serif;
-  --font-b:     'Montserrat', system-ui, sans-serif;
+  --font-d:     'Raleway', system-ui, sans-serif;
+  --font-b:     'Inter', system-ui, sans-serif;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,9 +46,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 ul   { list-style: none; }
 
 h1, h2, h3, h4, h5 { font-family: var(--font-d); line-height: 1.2; color: var(--text); }
-h1 { font-size: clamp(2.2rem, 5vw, 4.5rem); font-weight: 700; }
-h2 { font-size: clamp(1.7rem, 3.5vw, 2.8rem); font-weight: 600; }
-h3 { font-size: clamp(1.1rem, 2vw, 1.6rem); font-weight: 600; }
+h1 { font-size: clamp(2.2rem, 5vw, 4.5rem); font-weight: 600; letter-spacing: -.01em; }
+h2 { font-size: clamp(1.7rem, 3.5vw, 2.8rem); font-weight: 600; letter-spacing: -.01em; }
+h3 { font-size: clamp(1.1rem, 2vw, 1.6rem); font-weight: 500; }
 
 .text-gold   { color: var(--gold); }
 .text-muted  { color: var(--text-muted); }
@@ -144,16 +144,18 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.6rem); font-weight: 600; }
 .nav-logo { display: flex; align-items: center; gap: .75rem; }
 
 .logo-emblem {
-  width: 42px; height: 42px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  width: 42px; height: 42px; border-radius: 10px;
+  background: linear-gradient(145deg, var(--navy), var(--navy-mid));
+  border: 1px solid rgba(201,169,110,.4);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-d); font-size: 1.25rem; font-weight: 700;
-  color: var(--white); flex-shrink: 0;
+  font-size: .9rem; color: var(--gold); flex-shrink: 0;
+  box-shadow: 0 2px 12px rgba(10,22,40,.25), inset 0 1px 0 rgba(201,169,110,.15);
 }
 
 .logo-txt { display: flex; flex-direction: column; }
-.logo-name { font-family: var(--font-d); font-size: 1.35rem; font-weight: 700; color: var(--text); line-height: 1; }
-.logo-tag  { font-size: .58rem; font-weight: 500; letter-spacing: .2em; color: var(--gold); text-transform: uppercase; }
+.logo-name { font-family: var(--font-d); font-size: 1.3rem; font-weight: 300; color: var(--text); line-height: 1; letter-spacing: .03em; }
+.logo-med  { font-weight: 700; color: var(--gold); letter-spacing: .01em; }
+.logo-tag  { font-size: .58rem; font-weight: 400; letter-spacing: .22em; color: var(--text-muted); text-transform: uppercase; margin-top: .15rem; }
 
 .nav-links { display: flex; align-items: center; gap: 1.5rem; }
 .nav-links > a,
@@ -842,7 +844,9 @@ footer {
 .footer-col ul a { font-size: .83rem; color: rgba(255,255,255,.48); transition: var(--ease-fast); }
 .footer-col ul a:hover { color: var(--gold); }
 
-footer .logo-name { color: rgba(255,255,255,.9); }
+footer .logo-name { color: rgba(255,255,255,.85); font-weight: 300; }
+footer .logo-med  { color: var(--gold-light); }
+footer .logo-tag  { color: rgba(255,255,255,.35); }
 
 .footer-bar {
   border-top: 1px solid rgba(255,255,255,.1); padding-top: 2rem;
