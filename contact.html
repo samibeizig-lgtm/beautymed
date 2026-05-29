@@ -11,57 +11,57 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-i18n-title="title.contact">
 
 <header id="header" role="banner">
   <div class="nav-wrap">
     <a href="index.html" class="nav-logo">
       <div class="logo-emblem"><i class="fas fa-plus"></i></div>
-      <div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div>
+      <div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag" data-i18n="common.tagline">Votre Beauté, Notre Excellence</span></div>
     </a>
     <nav class="nav-links" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
       <div class="nav-dropdown">
-        <a href="visage.html" class="nav-parent">Visage <i class="fas fa-chevron-down"></i></a>
+        <a href="visage.html" class="nav-parent" data-i18n="nav.face">Visage <i class="fas fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="visage.html#rhinoplastie">Rhinoplastie</a>
-          <a href="visage.html#blepharoplastie">Blépharoplastie</a>
-          <a href="visage.html#lifting">Lifting Facial</a>
-          <a href="visage.html#otoplastie">Otoplastie</a>
+          <a href="visage.html#rhinoplastie" data-i18n="nav.face.rhino">Rhinoplastie</a>
+          <a href="visage.html#blepharoplastie" data-i18n="nav.face.bleph">Blépharoplastie</a>
+          <a href="visage.html#lifting" data-i18n="nav.face.lift">Lifting Facial</a>
+          <a href="visage.html#otoplastie" data-i18n="nav.face.oto">Otoplastie</a>
         </div>
       </div>
-      <a href="silhouette.html">Silhouette</a>
-      <a href="seins.html">Seins</a>
+      <a href="silhouette.html" data-i18n="nav.silhouette">Silhouette</a>
+      <a href="seins.html" data-i18n="nav.breast">Seins</a>
       
       
-      <a href="chirurgiens.html">Chirurgiens</a>
+      <a href="chirurgiens.html" data-i18n="nav.surgeons">Chirurgiens</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
     <div class="nav-right">
-      <div class="lang-toggle"><button class="lang-btn active">FR</button><button class="lang-btn">EN</button><button class="lang-btn">AR</button></div>
-      <a href="contact.html" class="btn btn-gold nav-cta"><i class="fas fa-calendar-check"></i> Consultation</a>
+      <div class="lang-toggle"><button class="lang-btn active" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button><button class="lang-btn" data-lang="it">IT</button></div>
+      <a href="contact.html" class="btn btn-gold nav-cta" data-i18n="nav.cta"><i class="fas fa-calendar-check"></i> Consultation</a>
     </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <nav class="mobile-nav">
-  <a href="index.html">Accueil</a>
+  <a href="index.html" data-i18n="nav.home">Accueil</a>
   <a href="visage.html">Visage</a>
-  <a href="silhouette.html">Silhouette</a>
-  <a href="seins.html">Seins</a>
+  <a href="silhouette.html" data-i18n="nav.silhouette">Silhouette</a>
+  <a href="seins.html" data-i18n="nav.breast">Seins</a>
   
   
-  <a href="chirurgiens.html">Chirurgiens</a>
-  <a href="contact.html" class="btn btn-gold">Consultation gratuite</a>
+  <a href="chirurgiens.html" data-i18n="nav.surgeons">Chirurgiens</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav.mobile.cta">Consultation gratuite</a>
 </nav>
 
 <div class="page-hero">
   <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80');"></div>
   <div class="page-hero-content container">
-    <span class="eyebrow">Nous Contacter</span>
-    <h1>Consultation Gratuite</h1>
-    <p>Parlez à un conseiller médical dédié. Gratuit, sans engagement, réponse garantie sous 24h.</p>
+    <span class="eyebrow" data-i18n="contact.hero.eyebrow">Nous Contacter</span>
+    <h1 data-i18n="contact.hero.title">Consultation Gratuite</h1>
+    <p data-i18n="contact.hero.sub">Parlez à un conseiller médical dédié. Gratuit, sans engagement, réponse garantie sous 24h.</p>
   </div>
 </div>
 
@@ -69,20 +69,20 @@
   <div class="container">
     <div class="contact-grid">
       <div class="form-shell reveal-left">
-        <h3>Demandez Votre Devis Personnalisé</h3>
-        <p>Remplissez le formulaire et un coordinateur vous contacte sous 24h.</p>
+        <h3 data-i18n="contact.form.title">Demandez Votre Devis Personnalisé</h3>
+        <p data-i18n="contact.form.sub">Remplissez le formulaire et un coordinateur vous contacte sous 24h.</p>
         <form class="contact-form" novalidate>
           <div class="f-grid">
-            <div class="f-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required /></div>
-            <div class="f-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Votre nom" required /></div>
-            <div class="f-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.com" required /></div>
-            <div class="f-group"><label for="telephone">Téléphone / WhatsApp</label><input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" /></div>
+            <div class="f-group"><label for="prenom" data-i18n="contact.form.fname">Prénom</label><input type="text" id="prenom" name="prenom" data-i18n-placeholder="contact.form.fname.ph" placeholder="Votre prénom" required /></div>
+            <div class="f-group"><label for="nom" data-i18n="contact.form.lname">Nom</label><input type="text" id="nom" name="nom" data-i18n-placeholder="contact.form.lname.ph" placeholder="Votre nom" required /></div>
+            <div class="f-group"><label for="email" data-i18n="contact.form.email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.com" required /></div>
+            <div class="f-group"><label for="telephone" data-i18n="contact.form.phone">Téléphone / WhatsApp</label><input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" /></div>
             <div class="f-group">
-              <label for="pays">Pays de résidence</label>
+              <label for="pays" data-i18n="contact.form.country">Pays de résidence</label>
               <select id="pays" name="pays"><option value="">Sélectionnez votre pays</option><option>France</option><option>Belgique</option><option>Suisse</option><option>Canada</option><option>Luxembourg</option><option>Autre</option></select>
             </div>
             <div class="f-group">
-              <label for="procedure">Intervention souhaitée</label>
+              <label for="procedure" data-i18n="contact.form.proc">Intervention souhaitée</label>
               <select id="procedure" name="procedure">
                 <option value="">Sélectionnez une intervention</option>
                 <optgroup label="Visage"><option>Rhinoplastie</option><option>Blépharoplastie</option><option>Lifting facial</option><option>Otoplastie</option><option>Mentoplastie</option></optgroup>
@@ -91,27 +91,27 @@
                 <optgroup label="Médecine esthétique"><option>Botox</option><option>Acide hyaluronique</option><option>Mésothérapie / PRP</option><option>Peeling</option></optgroup>
               </select>
             </div>
-            <div class="f-group"><label for="date">Date souhaitée (approximative)</label><input type="month" id="date" name="date" /></div>
+            <div class="f-group"><label for="date" data-i18n="contact.form.date">Date souhaitée (approximative)</label><input type="month" id="date" name="date" /></div>
             <div class="f-group">
-              <label for="forfait">Forfait envisagé</label>
+              <label for="forfait" data-i18n="contact.form.pkg">Forfait envisagé</label>
               <select id="forfait" name="forfait"><option value="">Sélectionnez un forfait</option><option>Pack Essentiel</option><option>Pack Confort</option><option>Pack Premium</option><option>Je ne sais pas encore</option></select>
             </div>
-            <div class="f-group span2"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Décrivez votre demande, vos attentes ou posez vos questions..."></textarea></div>
+            <div class="f-group span2"><label for="message" data-i18n="contact.form.msg">Votre message</label><textarea id="message" name="message" data-i18n-placeholder="contact.form.msg.ph" placeholder="Décrivez votre demande, vos attentes ou posez vos questions..."></textarea></div>
           </div>
-          <button type="submit" class="btn btn-gold f-submit">Envoyer ma demande →</button>
+          <button type="submit" class="btn btn-gold f-submit" data-i18n="contact.form.submit">Envoyer ma demande →</button>
         </form>
       </div>
 
       <div class="contact-info-col reveal-right">
-        <h3>Nos Coordonnées</h3>
-        <p>Disponibles 7j/7 pour répondre à toutes vos questions.</p>
+        <h3 data-i18n="contact.info.title">Nos Coordonnées</h3>
+        <p data-i18n="contact.info.sub">Disponibles 7j/7 pour répondre à toutes vos questions.</p>
         <div class="c-items">
           <div class="c-item"><div class="c-icon"><i class="fas fa-phone"></i></div><div><span class="c-label">Téléphone</span><span class="c-val">+216 98 000 000<br>+216 71 000 000</span></div></div>
           <div class="c-item"><div class="c-icon"><i class="fas fa-envelope"></i></div><div><span class="c-label">Email</span><span class="c-val">contact@beautymed.tn<br>devis@beautymed.tn</span></div></div>
           <div class="c-item"><div class="c-icon"><i class="fas fa-location-dot"></i></div><div><span class="c-label">Adresse</span><span class="c-val">12 Avenue Habib Bourguiba<br>Tunis 1001, Tunisie</span></div></div>
           <div class="c-item"><div class="c-icon"><i class="fas fa-clock"></i></div><div><span class="c-label">Horaires</span><span class="c-val">Lun – Sam : 8h00 – 20h00<br>WhatsApp : 24/7</span></div></div>
         </div>
-        <button class="wa-cta" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp" style="font-size:1.3rem;"></i> Écrire sur WhatsApp maintenant</button>
+        <button class="wa-cta" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp" style="font-size:1.3rem;"></i><span data-i18n="contact.wa.btn"> Écrire sur WhatsApp maintenant</span></button>
         <div class="socials">
           <button class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></button>
           <button class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></button>
@@ -120,12 +120,12 @@
           <button class="soc-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></button>
         </div>
         <div style="margin-top:2.5rem; padding:2rem; background:var(--cream); border-radius:var(--r-md); border:1px solid var(--border);">
-          <h4 style="font-family:var(--font-d); margin-bottom:1rem; font-size:1rem;">Nos Engagements</h4>
+          <h4 style="font-family:var(--font-d); margin-bottom:1rem; font-size:1rem;" data-i18n="contact.commit.title">Nos Engagements</h4>
           <ul style="display:flex;flex-direction:column;gap:.7rem;">
-            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Réponse garantie sous 24h</li>
-            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Consultation 100% gratuite</li>
-            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Devis transparent, sans surprise</li>
-            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> Données personnelles protégées (RGPD)</li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> <span data-i18n="contact.commit.1">Réponse garantie sous 24h</span></li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> <span data-i18n="contact.commit.2">Consultation 100% gratuite</span></li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> <span data-i18n="contact.commit.3">Devis transparent, sans surprise</span></li>
+            <li style="display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--text-muted);"><span style="color:var(--gold);">✓</span> <span data-i18n="contact.commit.4">Données personnelles protégées (RGPD)</span></li>
           </ul>
         </div>
       </div>
@@ -137,21 +137,22 @@
   <div class="container">
     <div class="footer-main">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a>
-        <p>Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p>
-        <div class="footer-nl"><input type="email" placeholder="Votre email" aria-label="Email newsletter" /><button type="button">S'abonner</button></div>
+        <a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag" data-i18n="common.tagline">Votre Beauté, Notre Excellence</span></div></a>
+        <p data-i18n="footer.brand">Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p>
+        <div class="footer-nl"><input type="email" data-i18n-placeholder="footer.email_ph" placeholder="Votre email" aria-label="Email newsletter" /><button type="button" data-i18n="footer.subscribe">S'abonner</button></div>
       </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="visage.html">Chirurgie du Visage</a></li><li><a href="silhouette.html">Chirurgie du Corps</a></li><li><a href="seins.html">Chirurgie des Seins</a></li><li></li></ul></div>
-      <div class="footer-col"><h5>La Société</h5><ul><li><a href="index.html#about">À Propos</a></li><li><a href="chirurgiens.html">Nos Chirurgiens</a></li><li><a href="index.html#garanties">Nos Garanties</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#">Mentions Légales</a></li><li><a href="#">Politique de Confidentialité</a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col1">Services</h5><ul><li><a href="visage.html" data-i18n="footer.svc.face">Chirurgie du Visage</a></li><li><a href="silhouette.html" data-i18n="footer.svc.body">Chirurgie du Corps</a></li><li><a href="seins.html" data-i18n="footer.svc.breast">Chirurgie des Seins</a></li><li></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col2">La Société</h5><ul><li><a href="index.html#about" data-i18n="footer.about">À Propos</a></li><li><a href="chirurgiens.html" data-i18n="footer.surgeons">Nos Chirurgiens</a></li><li><a href="index.html#garanties" data-i18n="footer.guarantees">Nos Garanties</a></li><li><a href="index.html#faq" data-i18n="footer.faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col3">Contact</h5><ul><li><a href="contact.html" data-i18n="footer.free_consult">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#" data-i18n="footer.legal">Mentions Légales</a></li><li><a href="#" data-i18n="footer.privacy">Politique de Confidentialité</a></li></ul></div>
     </div>
-    <div class="footer-bar"><p>© 2025 BeautyMed Tunisia. Tous droits réservés.</p><div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">CGU</a></div></div>
+    <div class="footer-bar"><p><span data-i18n="footer.copyright">© 2025 BeautyMed Tunisia. Tous droits réservés.</span></p><div class="footer-legal"><a href="#" data-i18n="footer.legal2">Mentions légales</a><a href="#" data-i18n="footer.gdpr">Confidentialité</a><a href="#" data-i18n="footer.terms">CGU</a></div></div>
   </div>
 </footer>
 
-<div class="wa-float"><span class="wa-float-tip">Contactez-nous sur WhatsApp</span><button class="wa-float-btn" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp"></i></button></div>
+<div class="wa-float"><span class="wa-float-tip" data-i18n="wa.tip">Contactez-nous sur WhatsApp</span><button class="wa-float-btn" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp"></i></button></div>
 <button class="btt"><i class="fas fa-chevron-up"></i></button>
-<div class="cookie" role="alert"><p class="cookie-txt">Nous utilisons des cookies pour améliorer votre expérience. <a href="#">Politique de confidentialité</a>.</p><div class="cookie-btns"><button class="ck-accept">Accepter</button><button class="ck-decline">Refuser</button></div></div>
+<div class="cookie" role="alert"><p class="cookie-txt"><span data-i18n="cookie.text">Nous utilisons des cookies pour améliorer votre expérience.</span> <a href="#">Politique de confidentialité</a>.</p><div class="cookie-btns"><button class="ck-accept" data-i18n="cookie.accept">Accepter</button><button class="ck-decline" data-i18n="cookie.decline">Refuser</button></div></div>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

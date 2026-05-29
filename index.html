@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-i18n-title="title.home">
 
 <header id="header" role="banner">
   <div class="nav-wrap">
@@ -23,30 +23,30 @@
       <div class="logo-emblem"><i class="fas fa-plus"></i></div>
       <div class="logo-txt">
         <span class="logo-name">Beauty<span class="logo-med">Med</span></span>
-        <span class="logo-tag">Votre Beauté, Notre Excellence</span>
+        <span class="logo-tag" data-i18n="common.tagline">Votre Beauté, Notre Excellence</span>
       </div>
     </a>
     <nav class="nav-links" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
       <div class="nav-dropdown">
-        <a href="visage.html" class="nav-parent">Visage <i class="fas fa-chevron-down"></i></a>
+        <a href="visage.html" class="nav-parent" data-i18n="nav.face">Visage <i class="fas fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="visage.html#rhinoplastie">Rhinoplastie</a>
-          <a href="visage.html#blepharoplastie">Blépharoplastie</a>
-          <a href="visage.html#lifting">Lifting Facial</a>
-          <a href="visage.html#otoplastie">Otoplastie</a>
+          <a href="visage.html#rhinoplastie" data-i18n="nav.face.rhino">Rhinoplastie</a>
+          <a href="visage.html#blepharoplastie" data-i18n="nav.face.bleph">Blépharoplastie</a>
+          <a href="visage.html#lifting" data-i18n="nav.face.lift">Lifting Facial</a>
+          <a href="visage.html#otoplastie" data-i18n="nav.face.oto">Otoplastie</a>
         </div>
       </div>
-      <a href="silhouette.html">Silhouette</a>
-      <a href="seins.html">Seins</a>
-      <a href="chirurgiens.html">Chirurgiens</a>
-      <a href="contact.html">Contact</a>
+      <a href="silhouette.html" data-i18n="nav.silhouette">Silhouette</a>
+      <a href="seins.html" data-i18n="nav.breast">Seins</a>
+      <a href="chirurgiens.html" data-i18n="nav.surgeons">Chirurgiens</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="nav-right">
       <div class="lang-toggle" role="group" aria-label="Langue">
-        <button class="lang-btn active">FR</button>
-        <button class="lang-btn">EN</button>
-        <button class="lang-btn">AR</button>
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="it">IT</button>
       </div>
       <a href="contact.html" class="btn btn-gold nav-cta">
         <i class="fas fa-calendar-check"></i> Consultation
@@ -59,52 +59,46 @@
 </header>
 
 <nav class="mobile-nav" aria-label="Navigation mobile">
-  <a href="index.html">Accueil</a>
+  <a href="index.html" data-i18n="nav.home">Accueil</a>
   <a href="visage.html">Visage</a>
-  <a href="silhouette.html">Silhouette</a>
-  <a href="seins.html">Seins</a>
-  <a href="chirurgiens.html">Chirurgiens</a>
-  <a href="contact.html" class="btn btn-gold">Consultation gratuite</a>
+  <a href="silhouette.html" data-i18n="nav.silhouette">Silhouette</a>
+  <a href="seins.html" data-i18n="nav.breast">Seins</a>
+  <a href="chirurgiens.html" data-i18n="nav.surgeons">Chirurgiens</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav.mobile.cta">Consultation gratuite</a>
 </nav>
 
 <section id="hero" aria-label="Accueil">
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-left">
-      <div class="hero-eyebrow">Tourisme Médical &amp; Chirurgie Esthétique</div>
-      <h1 class="hero-title">
-        Révélez Votre<br>
-        <em>Plus Belle Version</em>
-      </h1>
-      <p class="hero-sub">
-        Accédez à une chirurgie esthétique d'excellence en Tunisie —
-        chirurgiens réputés, cliniques accréditées et forfaits tout inclus
-        conçus pour vous accompagner à chaque étape de votre transformation.
-      </p>
+      <div class="hero-eyebrow" data-i18n="hero.eyebrow">Tourisme Médical &amp; Chirurgie Esthétique</div>
+      <h1 class="hero-title" data-i18n-html="hero.title">Révélez Votre<br>
+        <em>Plus Belle Version</em></h1>
+      <p class="hero-sub" data-i18n="hero.sub">Accédez à une chirurgie esthétique d'excellence en Tunisie — chirurgiens réputés, cliniques accréditées et forfaits tout inclus conçus pour vous accompagner à chaque étape de votre transformation.</p>
       <div class="hero-ctas">
         <a href="#services" class="btn btn-gold">
-          <i class="fas fa-sparkles"></i> Découvrir nos offres
+          <i class="fas fa-sparkles"></i> <span data-i18n="hero.cta1">Découvrir nos offres</span>
         </a>
         <a href="contact.html" class="btn btn-outline-white">
-          <i class="fas fa-video"></i> Consultation gratuite
+          <i class="fas fa-video"></i> <span data-i18n="hero.cta2">Consultation gratuite</span>
         </a>
       </div>
       <div class="hero-trust" role="list">
         <div class="trust-item" role="listitem">
           <span class="trust-val">15+</span>
-          <span class="trust-lbl">Ans d'expérience</span>
+          <span class="trust-lbl" data-i18n="hero.trust.exp">Ans d'expérience</span>
         </div>
         <div class="trust-item" role="listitem">
           <span class="trust-val">50+</span>
-          <span class="trust-lbl">Chirurgiens</span>
+          <span class="trust-lbl" data-i18n="hero.trust.chir">Chirurgiens</span>
         </div>
         <div class="trust-item" role="listitem">
           <span class="trust-val">10K+</span>
-          <span class="trust-lbl">Patients satisfaits</span>
+          <span class="trust-lbl" data-i18n="hero.trust.pat">Patients satisfaits</span>
         </div>
         <div class="trust-item" role="listitem">
           <span class="trust-val">98%</span>
-          <span class="trust-lbl">Satisfaction</span>
+          <span class="trust-lbl" data-i18n="hero.trust.sat">Satisfaction</span>
         </div>
       </div>
     </div>
@@ -114,13 +108,10 @@
 <section id="services" aria-labelledby="services-title">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Nos Spécialités</span>
-      <h2 id="services-title">Nos Services par Catégorie</h2>
+      <span class="eyebrow" data-i18n="svc.eyebrow">Nos Spécialités</span>
+      <h2 id="services-title" data-i18n="svc.title">Nos Services par Catégorie</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">
-        Une gamme complète de procédures esthétiques assurées par des
-        chirurgiens certifiés dans nos cliniques partenaires accréditées.
-      </p>
+      <p class="section-sub" data-i18n="svc.sub">Une gamme complète de procédures esthétiques assurées par des chirurgiens certifiés dans nos cliniques partenaires accréditées.</p>
     </header>
 
     <div class="svc-grid">
@@ -128,9 +119,9 @@
         <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Chirurgie du Visage" class="svc-card-img" />
         <div class="svc-card-body">
           <div class="svc-card-icon"><i class="fas fa-spa"></i></div>
-          <div class="svc-card-title">Chirurgie du Visage</div>
-          <p class="svc-card-desc">Rhinoplastie, blépharoplastie, lifting facial, otoplastie et mentoplastie. Révélez l'harmonie naturelle de votre visage.</p>
-          <span class="svc-card-link">Explorer <i class="fas fa-arrow-right"></i></span>
+          <div class="svc-card-title" data-i18n="svc.face.title">Chirurgie du Visage</div>
+          <p class="svc-card-desc" data-i18n="svc.face.desc">Rhinoplastie, blépharoplastie, lifting facial, otoplastie et mentoplastie. Révélez l'harmonie naturelle de votre visage.</p>
+          <span class="svc-card-link" data-i18n="svc.explore">Explorer <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
@@ -138,9 +129,9 @@
         <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=600&q=80" alt="Chirurgie de la Silhouette" class="svc-card-img" loading="lazy" />
         <div class="svc-card-body">
           <div class="svc-card-icon"><i class="fas fa-star-of-life"></i></div>
-          <div class="svc-card-title">Chirurgie de la Silhouette</div>
-          <p class="svc-card-desc">Liposuccion, abdominoplastie, BBL, lifting des bras et des cuisses. Sculptez la silhouette de vos rêves.</p>
-          <span class="svc-card-link">Explorer <i class="fas fa-arrow-right"></i></span>
+          <div class="svc-card-title" data-i18n="svc.body.title">Chirurgie de la Silhouette</div>
+          <p class="svc-card-desc" data-i18n="svc.body.desc">Liposuccion, abdominoplastie, BBL, lifting des bras et des cuisses. Sculptez la silhouette de vos rêves.</p>
+          <span class="svc-card-link" data-i18n="svc.explore">Explorer <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
@@ -148,9 +139,9 @@
         <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Chirurgie des Seins" class="svc-card-img" loading="lazy" />
         <div class="svc-card-body">
           <div class="svc-card-icon"><i class="fas fa-heart"></i></div>
-          <div class="svc-card-title">Chirurgie des Seins</div>
-          <p class="svc-card-desc">Augmentation mammaire, lifting des seins, réduction mammaire. Des résultats naturels et proportionnés.</p>
-          <span class="svc-card-link">Explorer <i class="fas fa-arrow-right"></i></span>
+          <div class="svc-card-title" data-i18n="svc.breast.title">Chirurgie des Seins</div>
+          <p class="svc-card-desc" data-i18n="svc.breast.desc">Augmentation mammaire, lifting des seins, réduction mammaire. Des résultats naturels et proportionnés.</p>
+          <span class="svc-card-link" data-i18n="svc.explore">Explorer <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
@@ -161,35 +152,35 @@
 <section style="background:var(--cream); padding:4rem 0;">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Tout Est Inclus</span>
-      <h2>Inclus dans Votre Séjour — Forfait Essentiel</h2>
+      <span class="eyebrow" data-i18n="inclus.eyebrow">Tout Est Inclus</span>
+      <h2 data-i18n="inclus.title">Inclus dans Votre Séjour — Forfait Essentiel</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Chaque intervention intègre le Forfait Essentiel : vol, hôtel, transferts et suivi médical — aucun frais caché.</p>
+      <p class="section-sub" data-i18n="inclus.sub">Chaque intervention intègre le Forfait Essentiel : vol, hôtel, transferts et suivi médical — aucun frais caché.</p>
     </header>
     <div class="inclus-grid reveal">
       <div class="inclus-item">
         <div class="inclus-icon"><i class="fas fa-plane"></i></div>
-        <span>Vol aller-retour (éco)</span>
+        <span data-i18n="inclus.flight">Vol aller-retour (éco)</span>
       </div>
       <div class="inclus-item">
         <div class="inclus-icon"><i class="fas fa-hotel"></i></div>
-        <span>Hôtel 3★ demi-pension — 5 nuits</span>
+        <span data-i18n="inclus.hotel">Hôtel 3★ demi-pension — 5 nuits</span>
       </div>
       <div class="inclus-item">
         <div class="inclus-icon"><i class="fas fa-car"></i></div>
-        <span>Transferts aéroport / clinique</span>
+        <span data-i18n="inclus.transfer">Transferts aéroport / clinique</span>
       </div>
       <div class="inclus-item">
         <div class="inclus-icon"><i class="fas fa-stethoscope"></i></div>
-        <span>Consultation pré-opératoire</span>
+        <span data-i18n="inclus.consult">Consultation pré-opératoire</span>
       </div>
       <div class="inclus-item">
         <div class="inclus-icon"><i class="fas fa-heart-pulse"></i></div>
-        <span>Suivi post-opératoire 3 mois</span>
+        <span data-i18n="inclus.followup">Suivi post-opératoire 3 mois</span>
       </div>
       <div class="inclus-item">
         <div class="inclus-icon"><i class="fas fa-file-lines"></i></div>
-        <span>Traductions &amp; démarches administratives</span>
+        <span data-i18n="inclus.admin">Traductions &amp; démarches administratives</span>
       </div>
     </div>
   </div>
@@ -199,19 +190,19 @@
   <div class="stats-inner">
     <div class="stat-item reveal delay-1">
       <span class="stat-num" data-count="15" data-suffix=" ans">0 ans</span>
-      <span class="stat-label">D'expérience</span>
+      <span class="stat-label" data-i18n="stats.exp">D'expérience</span>
     </div>
     <div class="stat-item reveal delay-2">
       <span class="stat-num" data-count="50" data-suffix="+">0+</span>
-      <span class="stat-label">Chirurgiens experts</span>
+      <span class="stat-label" data-i18n="stats.chir">Chirurgiens experts</span>
     </div>
     <div class="stat-item reveal delay-3">
       <span class="stat-num" data-count="10000" data-suffix="+">0+</span>
-      <span class="stat-label">Opérations réussies</span>
+      <span class="stat-label" data-i18n="stats.ops">Opérations réussies</span>
     </div>
     <div class="stat-item reveal delay-4">
       <span class="stat-num" data-count="98" data-suffix="%">0%</span>
-      <span class="stat-label">Taux de satisfaction</span>
+      <span class="stat-label" data-i18n="stats.sat">Taux de satisfaction</span>
     </div>
   </div>
 </div>
@@ -225,34 +216,34 @@
         </div>
         <div class="about-corner">
           <span class="cn">2009</span>
-          <span class="ct">Fondée à Tunis</span>
+          <span class="ct" data-i18n="about.founded">Fondée à Tunis</span>
         </div>
       </div>
       <div class="about-copy reveal-right">
-        <span class="eyebrow">Notre Histoire</span>
-        <h2 id="about-title">L'Excellence Médicale<br><span class="text-gold">au Cœur de la Tunisie</span></h2>
+        <span class="eyebrow" data-i18n="about.eyebrow">Notre Histoire</span>
+        <h2 id="about-title" data-i18n-html="about.title">L'Excellence Médicale<br><span class="text-gold">au Cœur de la Tunisie</span></h2>
         <div class="gold-rule" style="margin:1.5rem 0;"></div>
-        <p>Depuis 2009, BeautyMed Tunisia accompagne des milliers de patients venant de France, Belgique, Suisse, Canada et du monde entier dans leur parcours de transformation esthétique.</p>
-        <p>Notre réseau regroupe les meilleurs chirurgiens plasticiens et esthétiques de Tunisie, tous formés dans les plus grandes universités européennes, exerçant dans des cliniques agréées aux normes internationales les plus strictes.</p>
+        <p data-i18n="about.p1">Depuis 2009, BeautyMed Tunisia accompagne des milliers de patients venant de France, Belgique, Suisse, Canada et du monde entier dans leur parcours de transformation esthétique.</p>
+        <p data-i18n="about.p2">Notre réseau regroupe les meilleurs chirurgiens plasticiens et esthétiques de Tunisie, tous formés dans les plus grandes universités européennes, exerçant dans des cliniques agréées aux normes internationales les plus strictes.</p>
         <div class="highlights">
           <div class="hi-item">
             <div class="hi-icon"><i class="fas fa-user-md"></i></div>
-            <div class="hi-text"><strong>Équipe médicale d'élite</strong><span>Chirurgiens certifiés, formés en France et en Europe</span></div>
+            <div class="hi-text"><strong data-i18n="about.hi1.t">Équipe médicale d'élite</strong><span data-i18n="about.hi1.s">Chirurgiens certifiés, formés en France et en Europe</span></div>
           </div>
           <div class="hi-item">
             <div class="hi-icon"><i class="fas fa-shield-halved"></i></div>
-            <div class="hi-text"><strong>Sécurité maximale</strong><span>Cliniques ISO, protocoles conformes aux standards UE</span></div>
+            <div class="hi-text"><strong data-i18n="about.hi2.t">Sécurité maximale</strong><span data-i18n="about.hi2.s">Cliniques ISO, protocoles conformes aux standards UE</span></div>
           </div>
           <div class="hi-item">
             <div class="hi-icon"><i class="fas fa-headset"></i></div>
-            <div class="hi-text"><strong>Accompagnement 360°</strong><span>Coordinatrice dédiée 24/7, de l'arrivée au départ</span></div>
+            <div class="hi-text"><strong data-i18n="about.hi3.t">Accompagnement 360°</strong><span data-i18n="about.hi3.s">Coordinatrice dédiée 24/7, de l'arrivée au départ</span></div>
           </div>
           <div class="hi-item">
             <div class="hi-icon"><i class="fas fa-percent"></i></div>
-            <div class="hi-text"><strong>Économies jusqu'à 70%</strong><span>Qualité premium à des tarifs inaccessibles en France</span></div>
+            <div class="hi-text"><strong data-i18n="about.hi4.t">Économies jusqu'à 70%</strong><span data-i18n="about.hi4.s">Qualité premium à des tarifs inaccessibles en France</span></div>
           </div>
         </div>
-        <a href="contact.html" class="btn btn-gold"><i class="fas fa-arrow-right"></i> Parler à un conseiller</a>
+        <a href="contact.html" class="btn btn-gold"><i class="fas fa-arrow-right"></i> <span data-i18n="about.cta">Parler à un conseiller</span></a>
       </div>
     </div>
   </div>
@@ -261,19 +252,19 @@
 <div class="comparison-section">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Pourquoi la Tunisie ?</span>
-      <h2>Des Économies Jusqu'à 70%</h2>
+      <span class="eyebrow" data-i18n="cmp.eyebrow">Pourquoi la Tunisie ?</span>
+      <h2 data-i18n="cmp.title">Des Économies Jusqu'à 70%</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Des économies considérables sans compromis sur la qualité</p>
+      <p class="section-sub" data-i18n="cmp.sub">Des économies considérables sans compromis sur la qualité</p>
     </header>
     <div class="comparison reveal">
       <table class="cmp-table" aria-label="Comparaison des prix France vs Tunisie">
         <thead>
           <tr>
-            <th scope="col">Intervention</th>
-            <th scope="col">Prix en France</th>
-            <th scope="col">Prix en Tunisie</th>
-            <th scope="col">Économies</th>
+            <th scope="col" data-i18n="cmp.th.proc">Intervention</th>
+            <th scope="col" data-i18n="cmp.th.fr">Prix en France</th>
+            <th scope="col" data-i18n="cmp.th.tn">Prix en Tunisie</th>
+            <th scope="col" data-i18n="cmp.th.save">Économies</th>
           </tr>
         </thead>
         <tbody>
@@ -291,10 +282,10 @@
 <section id="chirurgiens" aria-labelledby="chirurgiens-title">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Notre Équipe Médicale</span>
-      <h2 id="chirurgiens-title">Nos Chirurgiens d'Excellence</h2>
+      <span class="eyebrow" data-i18n="chir.eyebrow">Notre Équipe Médicale</span>
+      <h2 id="chirurgiens-title" data-i18n="chir.title">Nos Chirurgiens d'Excellence</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Des praticiens reconnus internationalement, formés dans les plus grandes facultés de médecine européennes.</p>
+      <p class="section-sub" data-i18n="chir.sub">Des praticiens reconnus internationalement, formés dans les plus grandes facultés de médecine européennes.</p>
     </header>
     <div class="chir-grid">
       <article class="chir-card reveal delay-1">
@@ -302,34 +293,34 @@
         <h3 class="chir-name">Dr. Mehdi Belhaj</h3>
         <p class="chir-spec">Chirurgie du Visage &amp; Rhinoplastie</p>
         <p class="chir-creds">Paris VI · Hôpital Lariboisière · SOFCPRE</p>
-        <div class="chir-stats"><div><span class="cs-val">22</span><span class="cs-lbl">Années exp.</span></div><div><span class="cs-val">1 800+</span><span class="cs-lbl">Opérations</span></div></div>
+        <div class="chir-stats"><div><span class="cs-val">22</span><span class="cs-lbl" data-i18n="chir.years">Années exp.</span></div><div><span class="cs-val">1 800+</span><span class="cs-lbl" data-i18n="chir.ops">Opérations</span></div></div>
       </article>
       <article class="chir-card reveal delay-2">
         <div class="chir-avatar-wrap"><div class="avatar-ring"><div class="avatar-ring-inner"></div></div><div class="chir-avatar" style="background:linear-gradient(135deg,#EDD0D6,#C9A96E);">ST</div></div>
         <h3 class="chir-name">Dr. Sonia Trabelsi</h3>
         <p class="chir-spec">Chirurgie Mammaire &amp; Corps</p>
         <p class="chir-creds">Lyon I · CHU Lyon-Sud · Société Française CCF</p>
-        <div class="chir-stats"><div><span class="cs-val">17</span><span class="cs-lbl">Années exp.</span></div><div><span class="cs-val">2 100+</span><span class="cs-lbl">Opérations</span></div></div>
+        <div class="chir-stats"><div><span class="cs-val">17</span><span class="cs-lbl" data-i18n="chir.years">Années exp.</span></div><div><span class="cs-val">2 100+</span><span class="cs-lbl" data-i18n="chir.ops">Opérations</span></div></div>
       </article>
       <article class="chir-card reveal delay-3">
         <div class="chir-avatar-wrap"><div class="avatar-ring"><div class="avatar-ring-inner"></div></div><div class="chir-avatar" style="background:linear-gradient(135deg,#1E3A5F,#C9A96E);">KM</div></div>
         <h3 class="chir-name">Dr. Karim Msaddak</h3>
         <p class="chir-spec">Liposuccion &amp; Silhouette</p>
         <p class="chir-creds">Montpellier I · CHU Montpellier · ISAPS</p>
-        <div class="chir-stats"><div><span class="cs-val">15</span><span class="cs-lbl">Années exp.</span></div><div><span class="cs-val">1 500+</span><span class="cs-lbl">Opérations</span></div></div>
+        <div class="chir-stats"><div><span class="cs-val">15</span><span class="cs-lbl" data-i18n="chir.years">Années exp.</span></div><div><span class="cs-val">1 500+</span><span class="cs-lbl" data-i18n="chir.ops">Opérations</span></div></div>
       </article>
     </div>
-    <div style="text-align:center;margin-top:3rem;"><a href="chirurgiens.html" class="btn btn-outline"><i class="fas fa-users"></i> Voir toute l'équipe</a></div>
+    <div style="text-align:center;margin-top:3rem;"><a href="chirurgiens.html" class="btn btn-outline"><i class="fas fa-users"></i> <span data-i18n="chir.viewall">Voir toute l'équipe</span></a></div>
   </div>
 </section>
 
 <section id="temoignages" aria-labelledby="temoignages-title">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Ils Nous Font Confiance</span>
-      <h2 id="temoignages-title">Témoignages de Nos Patients</h2>
+      <span class="eyebrow" data-i18n="testi.eyebrow">Ils Nous Font Confiance</span>
+      <h2 id="temoignages-title" data-i18n="testi.title">Témoignages de Nos Patients</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Des centaines de patients de France, Belgique, Suisse et Canada nous confient leur histoire chaque année.</p>
+      <p class="section-sub" data-i18n="testi.sub">Des centaines de patients de France, Belgique, Suisse et Canada nous confient leur histoire chaque année.</p>
     </header>
     <div class="testi-viewport">
       <div class="testi-track">
@@ -371,30 +362,30 @@
 <section id="garanties" aria-labelledby="garanties-title">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Notre Engagement</span>
-      <h2 id="garanties-title">Nos Garanties &amp; Engagements</h2>
+      <span class="eyebrow" data-i18n="gar.eyebrow">Notre Engagement</span>
+      <h2 id="garanties-title" data-i18n="gar.title">Nos Garanties &amp; Engagements</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Votre sécurité et votre satisfaction sont notre priorité absolue. Chaque patient bénéficie de ces protections sans exception.</p>
+      <p class="section-sub" data-i18n="gar.sub">Votre sécurité et votre satisfaction sont notre priorité absolue. Chaque patient bénéficie de ces protections sans exception.</p>
     </header>
     <div class="gar-grid">
-      <div class="gar-card reveal delay-1"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-stethoscope"></i></div></div><h3 class="gar-title">Suivi Post-Op 12 Mois</h3><p class="gar-desc">Téléconsultations régulières avec votre chirurgien pendant toute une année pour assurer votre rétablissement.</p></div>
-      <div class="gar-card reveal delay-2"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-graduation-cap"></i></div></div><h3 class="gar-title">Chirurgiens Certifiés</h3><p class="gar-desc">Tous nos praticiens sont membres de sociétés savantes reconnues (SOFCPRE, ISAPS, ASPS) et opèrent dans des établissements agréés.</p></div>
-      <div class="gar-card reveal delay-3"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-hospital"></i></div></div><h3 class="gar-title">Cliniques Agréées</h3><p class="gar-desc">Nos cliniques partenaires sont certifiées ISO 9001 et régulièrement auditées par les autorités sanitaires tunisiennes et internationales.</p></div>
-      <div class="gar-card reveal delay-1"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-clock"></i></div></div><h3 class="gar-title">Accompagnement 24/7</h3><p class="gar-desc">Une coordinatrice francophone disponible jour et nuit pendant votre séjour en Tunisie, joignable par téléphone et WhatsApp.</p></div>
-      <div class="gar-card reveal delay-2"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-plane-departure"></i></div></div><h3 class="gar-title">Assurance Rapatriement</h3><p class="gar-desc">Couverture rapatriement médical complète incluse dans tous nos forfaits, avec assistance de notre assureur partenaire européen.</p></div>
-      <div class="gar-card reveal delay-3"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-gem"></i></div></div><h3 class="gar-title">Satisfaction Garantie</h3><p class="gar-desc">Si le résultat ne correspond pas au plan opératoire initial validé, nous prenons en charge une correction sans frais supplémentaires.</p></div>
+      <div class="gar-card reveal delay-1"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-stethoscope"></i></div></div><h3 class="gar-title" data-i18n="gar.1.t">Suivi Post-Op 12 Mois</h3><p class="gar-desc" data-i18n="gar.1.d">Téléconsultations régulières avec votre chirurgien pendant toute une année pour assurer votre rétablissement.</p></div>
+      <div class="gar-card reveal delay-2"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-graduation-cap"></i></div></div><h3 class="gar-title" data-i18n="gar.2.t">Chirurgiens Certifiés</h3><p class="gar-desc" data-i18n="gar.2.d">Tous nos praticiens sont membres de sociétés savantes reconnues (SOFCPRE, ISAPS, ASPS) et opèrent dans des établissements agréés.</p></div>
+      <div class="gar-card reveal delay-3"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-hospital"></i></div></div><h3 class="gar-title" data-i18n="gar.3.t">Cliniques Agréées</h3><p class="gar-desc" data-i18n="gar.3.d">Nos cliniques partenaires sont certifiées ISO 9001 et régulièrement auditées par les autorités sanitaires tunisiennes et internationales.</p></div>
+      <div class="gar-card reveal delay-1"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-clock"></i></div></div><h3 class="gar-title" data-i18n="gar.4.t">Accompagnement 24/7</h3><p class="gar-desc" data-i18n="gar.4.d">Une coordinatrice francophone disponible jour et nuit pendant votre séjour en Tunisie, joignable par téléphone et WhatsApp.</p></div>
+      <div class="gar-card reveal delay-2"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-plane-departure"></i></div></div><h3 class="gar-title" data-i18n="gar.5.t">Assurance Rapatriement</h3><p class="gar-desc" data-i18n="gar.5.d">Couverture rapatriement médical complète incluse dans tous nos forfaits, avec assistance de notre assureur partenaire européen.</p></div>
+      <div class="gar-card reveal delay-3"><div class="gar-icon-wrap"><div class="gar-icon-bg"><i class="fas fa-gem"></i></div></div><h3 class="gar-title" data-i18n="gar.6.t">Satisfaction Garantie</h3><p class="gar-desc" data-i18n="gar.6.d">Si le résultat ne correspond pas au plan opératoire initial validé, nous prenons en charge une correction sans frais supplémentaires.</p></div>
     </div>
   </div>
 </section>
 
 <div class="cta-banner">
   <div class="container">
-    <span class="eyebrow" style="color:var(--gold-light);">Prêt à commencer ?</span>
-    <h2>Consultation Gratuite &amp; Sans Engagement</h2>
-    <p>Parlez à un conseiller médical dédié. Réponse garantie sous 24h.</p>
+    <span class="eyebrow" style="color:var(--gold-light);" data-i18n="cta.eyebrow">Prêt à commencer ?</span>
+    <h2 data-i18n="cta.title">Consultation Gratuite &amp; Sans Engagement</h2>
+    <p data-i18n="cta.sub">Parlez à un conseiller médical dédié. Réponse garantie sous 24h.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Demander ma consultation</a>
-      <a href="#forfaits" class="btn btn-outline-white"><i class="fas fa-suitcase"></i> Voir les forfaits</a>
+      <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> <span data-i18n="cta.btn1">Demander ma consultation</span></a>
+      <a href="#forfaits" class="btn btn-outline-white"><i class="fas fa-suitcase"></i> <span data-i18n="cta.btn2">Voir les forfaits</span></a>
     </div>
   </div>
 </div>
@@ -402,17 +393,17 @@
 <section id="faq" aria-labelledby="faq-title">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Questions Fréquentes</span>
-      <h2 id="faq-title">Tout Savoir Avant de Partir</h2>
+      <span class="eyebrow" data-i18n="faq.eyebrow">Questions Fréquentes</span>
+      <h2 id="faq-title" data-i18n="faq.title">Tout Savoir Avant de Partir</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Vous avez des questions ? Voici les réponses aux interrogations les plus fréquentes de nos patients.</p>
+      <p class="section-sub" data-i18n="faq.sub">Vous avez des questions ? Voici les réponses aux interrogations les plus fréquentes de nos patients.</p>
     </header>
     <div class="faq-wrap">
-      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt">La chirurgie esthétique en Tunisie est-elle sûre ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner">Absolument. La Tunisie est l'une des destinations de tourisme médical les plus reconnues au monde. Nos cliniques partenaires sont certifiées ISO 9001, régulièrement auditées et nos chirurgiens sont formés dans les meilleures universités européennes.</div></div></div>
-      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt">Comment se déroule une consultation initiale ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner">La première consultation se fait en visioconférence avec l'un de nos coordinateurs médicaux. Vous présentez vos attentes, envoyez vos photos et recevez un devis personnalisé sous 48h.</div></div></div>
-      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt">Combien de temps dois-je prévoir pour mon séjour ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner">La durée varie selon l'intervention. Pour une chirurgie du visage (rhinoplastie, lifting), prévoir 7 à 10 jours minimum. Pour des interventions sur le corps (liposuccion, abdominoplastie), 10 à 14 jours.</div></div></div>
-      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt">Les prix incluent-ils réellement tout ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner">Oui, nos forfaits sont 100% transparents. Le devis inclut : honoraires du chirurgien, frais d'anesthésie, séjour en clinique, médicaments post-opératoires, transferts, hébergement et vol. Il n'y a aucun frais caché.</div></div></div>
-      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt">Comment payer ? Y a-t-il un acompte ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner">Un acompte de 20% est demandé à la réservation pour bloquer votre date opératoire. Le solde est payable à votre arrivée en Tunisie. Nous acceptons virements SEPA, cartes Visa/Mastercard et espèces EUR/TND.</div></div></div>
+      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt" data-i18n="faq.q1">La chirurgie esthétique en Tunisie est-elle sûre ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner"><span data-i18n="faq.a1">Absolument. La Tunisie est l'une des destinations de tourisme médical les plus reconnues au monde. Nos cliniques partenaires sont certifiées ISO 9001, régulièrement auditées et nos chirurgiens sont formés dans les meilleures universités européennes.</span></div></div></div>
+      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt" data-i18n="faq.q2">Comment se déroule une consultation initiale ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner"><span data-i18n="faq.a2">La première consultation se fait en visioconférence avec l'un de nos coordinateurs médicaux. Vous présentez vos attentes, envoyez vos photos et recevez un devis personnalisé sous 48h.</span></div></div></div>
+      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt" data-i18n="faq.q3">Combien de temps dois-je prévoir pour mon séjour ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner"><span data-i18n="faq.a3">La durée varie selon l'intervention. Pour une chirurgie du visage (rhinoplastie, lifting), prévoir 7 à 10 jours minimum. Pour des interventions sur le corps (liposuccion, abdominoplastie), 10 à 14 jours.</span></div></div></div>
+      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt" data-i18n="faq.q4">Les prix incluent-ils réellement tout ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner"><span data-i18n="faq.a4">Oui, nos forfaits sont 100% transparents. Le devis inclut : honoraires du chirurgien, frais d'anesthésie, séjour en clinique, médicaments post-opératoires, transferts, hébergement et vol. Il n'y a aucun frais caché.</span></div></div></div>
+      <div class="faq-item"><div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span class="faq-q-txt" data-i18n="faq.q5">Comment payer ? Y a-t-il un acompte ?</span><span class="faq-toggle" aria-hidden="true">+</span></div><div class="faq-a" role="region"><div class="faq-a-inner"><span data-i18n="faq.a5">Un acompte de 20% est demandé à la réservation pour bloquer votre date opératoire. Le solde est payable à votre arrivée en Tunisie. Nous acceptons virements SEPA, cartes Visa/Mastercard et espèces EUR/TND.</span></div></div></div>
     </div>
   </div>
 </section>
@@ -421,30 +412,31 @@
   <div class="container">
     <div class="footer-main">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a>
-        <p>Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p>
-        <div class="footer-nl"><input type="email" placeholder="Votre email" aria-label="Email newsletter" /><button type="button">S'abonner</button></div>
+        <a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag" data-i18n="common.tagline">Votre Beauté, Notre Excellence</span></div></a>
+        <p data-i18n="footer.brand">Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p>
+        <div class="footer-nl"><input type="email" data-i18n-placeholder="footer.email_ph" placeholder="Votre email" aria-label="Email newsletter" /><button type="button" data-i18n="footer.subscribe">S'abonner</button></div>
       </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="visage.html">Chirurgie du Visage</a></li><li><a href="silhouette.html">Chirurgie du Corps</a></li><li><a href="seins.html">Chirurgie des Seins</a></li></ul></div>
-      <div class="footer-col"><h5>La Société</h5><ul><li><a href="index.html#about">À Propos</a></li><li><a href="chirurgiens.html">Nos Chirurgiens</a></li><li><a href="index.html#garanties">Nos Garanties</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#">Mentions Légales</a></li><li><a href="#">Politique de Confidentialité</a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col1">Services</h5><ul><li><a href="visage.html" data-i18n="footer.svc.face">Chirurgie du Visage</a></li><li><a href="silhouette.html" data-i18n="footer.svc.body">Chirurgie du Corps</a></li><li><a href="seins.html" data-i18n="footer.svc.breast">Chirurgie des Seins</a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col2">La Société</h5><ul><li><a href="index.html#about" data-i18n="footer.about">À Propos</a></li><li><a href="chirurgiens.html" data-i18n="footer.surgeons">Nos Chirurgiens</a></li><li><a href="index.html#garanties" data-i18n="footer.guarantees">Nos Garanties</a></li><li><a href="index.html#faq" data-i18n="footer.faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col3">Contact</h5><ul><li><a href="contact.html" data-i18n="footer.free_consult">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#" data-i18n="footer.legal">Mentions Légales</a></li><li><a href="#" data-i18n="footer.privacy">Politique de Confidentialité</a></li></ul></div>
     </div>
     <div class="footer-bar">
-      <p>© 2025 BeautyMed Tunisia. Tous droits réservés. Société de Tourisme Médical agréée par le Ministère de la Santé Tunisien.</p>
-      <div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">CGU</a></div>
+      <p><span data-i18n="footer.copyright"><span data-i18n="footer.copyright">© 2025 BeautyMed Tunisia. Tous droits réservés.</span> Société de Tourisme Médical agréée par le Ministère de la Santé Tunisien.</span></p>
+      <div class="footer-legal"><a href="#" data-i18n="footer.legal2">Mentions légales</a><a href="#" data-i18n="footer.gdpr">Confidentialité</a><a href="#" data-i18n="footer.terms">CGU</a></div>
     </div>
   </div>
 </footer>
 
 <div class="wa-float">
-  <span class="wa-float-tip">Contactez-nous sur WhatsApp</span>
+  <span class="wa-float-tip" data-i18n="wa.tip">Contactez-nous sur WhatsApp</span>
   <button class="wa-float-btn" aria-label="WhatsApp" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp"></i></button>
 </div>
 <button class="btt" aria-label="Retour en haut"><i class="fas fa-chevron-up"></i></button>
 <div class="cookie" role="alert">
-  <p class="cookie-txt">Nous utilisons des cookies pour améliorer votre expérience. <a href="#">Politique de confidentialité</a>.</p>
-  <div class="cookie-btns"><button class="ck-accept">Accepter</button><button class="ck-decline">Refuser</button></div>
+  <p class="cookie-txt"><span data-i18n="cookie.text">Nous utilisons des cookies pour améliorer votre expérience.</span> <a href="#">Politique de confidentialité</a>.</p>
+  <div class="cookie-btns"><button class="ck-accept" data-i18n="cookie.accept">Accepter</button><button class="ck-decline" data-i18n="cookie.decline">Refuser</button></div>
 </div>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

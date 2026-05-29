@@ -11,54 +11,54 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-i18n-title="title.packages">
 
 <header id="header" role="banner">
   <div class="nav-wrap">
-    <a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a>
+    <a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag" data-i18n="common.tagline">Votre Beauté, Notre Excellence</span></div></a>
     <nav class="nav-links" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <div class="nav-dropdown"><a href="visage.html" class="nav-parent">Visage <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="visage.html#rhinoplastie">Rhinoplastie</a><a href="visage.html#blepharoplastie">Blépharoplastie</a><a href="visage.html#lifting">Lifting Facial</a><a href="visage.html#otoplastie">Otoplastie</a></div></div>
-      <a href="silhouette.html">Silhouette</a><a href="seins.html">Seins</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <div class="nav-dropdown"><a href="visage.html" class="nav-parent" data-i18n="nav.face">Visage <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="visage.html#rhinoplastie" data-i18n="nav.face.rhino">Rhinoplastie</a><a href="visage.html#blepharoplastie" data-i18n="nav.face.bleph">Blépharoplastie</a><a href="visage.html#lifting" data-i18n="nav.face.lift">Lifting Facial</a><a href="visage.html#otoplastie" data-i18n="nav.face.oto">Otoplastie</a></div></div>
+      <a href="silhouette.html" data-i18n="nav.silhouette">Silhouette</a><a href="seins.html" data-i18n="nav.breast">Seins</a>
       
-      <a href="chirurgiens.html">Chirurgiens</a><a href="contact.html">Contact</a>
+      <a href="chirurgiens.html" data-i18n="nav.surgeons">Chirurgiens</a><a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
-    <div class="nav-right"><div class="lang-toggle"><button class="lang-btn active">FR</button><button class="lang-btn">EN</button><button class="lang-btn">AR</button></div><a href="contact.html" class="btn btn-gold nav-cta"><i class="fas fa-calendar-check"></i> Consultation</a></div>
+    <div class="nav-right"><div class="lang-toggle"><button class="lang-btn active" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button><button class="lang-btn" data-lang="it">IT</button></div><a href="contact.html" class="btn btn-gold nav-cta" data-i18n="nav.cta"><i class="fas fa-calendar-check"></i> Consultation</a></div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <nav class="mobile-nav">
-  <a href="index.html">Accueil</a><a href="visage.html">Visage</a><a href="silhouette.html">Silhouette</a><a href="seins.html">Seins</a><a href="chirurgiens.html">Chirurgiens</a>
-  <a href="contact.html" class="btn btn-gold">Consultation gratuite</a>
+  <a href="index.html" data-i18n="nav.home">Accueil</a><a href="visage.html">Visage</a><a href="silhouette.html" data-i18n="nav.silhouette">Silhouette</a><a href="seins.html" data-i18n="nav.breast">Seins</a><a href="chirurgiens.html" data-i18n="nav.surgeons">Chirurgiens</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav.mobile.cta">Consultation gratuite</a>
 </nav>
 
 <div class="page-hero">
   <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80');"></div>
   <div class="page-hero-content container">
-    <span class="eyebrow">Clé en Main</span>
-    <h1>Forfaits Tout Inclus</h1>
-    <p>Concentrez-vous uniquement sur votre transformation. Nous gérons tout le reste : vols, hôtel, transferts, clinique et suivi post-opératoire.</p>
-    <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Demander un devis</a>
+    <span class="eyebrow" data-i18n="pkg.hero.eyebrow">Clé en Main</span>
+    <h1 data-i18n="pkg.hero.title">Forfaits Tout Inclus</h1>
+    <p data-i18n="pkg.hero.sub">Concentrez-vous uniquement sur votre transformation. Nous gérons tout le reste : vols, hôtel, transferts, clinique et suivi post-opératoire.</p>
+    <a href="contact.html" class="btn btn-gold" data-i18n="pkg.hero.cta"><i class="fas fa-calendar-check"></i> Demander un devis</a>
   </div>
 </div>
 
 <section style="padding:5rem 0; background:var(--white);">
   <div class="container" style="max-width:800px; text-align:center;">
-    <span class="eyebrow">Sérénité Totale</span>
-    <h2>Pourquoi Choisir un Forfait BeautyMed ?</h2>
+    <span class="eyebrow" data-i18n="pkg.why.eyebrow">Sérénité Totale</span>
+    <h2 data-i18n="pkg.why.title">Pourquoi Choisir un Forfait BeautyMed ?</h2>
     <div class="gold-rule"></div>
-    <p style="color:var(--text-muted); font-size:1rem; line-height:1.9;">Organiser un voyage médical peut être stressant. Nos forfaits tout inclus ont été conçus pour vous libérer de toutes les démarches logistiques. Un conseiller dédié vous accompagne de A à Z, de la réservation de votre vol jusqu'à votre retour chez vous en parfaite santé.</p>
+    <p style="color:var(--text-muted); font-size:1rem; line-height:1.9;" data-i18n="pkg.why.text">Organiser un voyage médical peut être stressant. Nos forfaits tout inclus ont été conçus pour vous libérer de toutes les démarches logistiques. Un conseiller dédié vous accompagne de A à Z, de la réservation de votre vol jusqu'à votre retour chez vous en parfaite santé.</p>
   </div>
 </section>
 
 <section class="forfaits-section">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Nos Packages</span>
-      <h2>Choisissez Votre Forfait</h2>
+      <span class="eyebrow" data-i18n="pkg.choose.eyebrow">Nos Packages</span>
+      <h2 data-i18n="pkg.choose.title">Choisissez Votre Forfait</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">Des forfaits clé-en-main pour que vous vous concentriez uniquement sur votre bien-être.</p>
+      <p class="section-sub" data-i18n="pkg.choose.sub">Des forfaits clé-en-main pour que vous vous concentriez uniquement sur votre bien-être.</p>
     </header>
     <div class="forfaits-grid">
       <div class="forfait reveal delay-1">
@@ -133,27 +133,28 @@
 
 <div class="cta-banner">
   <div class="container">
-    <span class="eyebrow" style="color:var(--gold-light);">Prêt à partir ?</span>
-    <h2>Demandez Votre Devis Personnalisé</h2>
-    <p>Chaque forfait est adapté à votre intervention et votre date de départ. Réponse sous 24h.</p>
-    <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Obtenir mon devis</a>
+    <span class="eyebrow" style="color:var(--gold-light);" data-i18n="pkg.cta.eyebrow">Prêt à partir ?</span>
+    <h2 data-i18n="pkg.cta.title">Demandez Votre Devis Personnalisé</h2>
+    <p data-i18n="pkg.cta.sub">Chaque forfait est adapté à votre intervention et votre date de départ. Réponse sous 24h.</p>
+    <a href="contact.html" class="btn btn-gold" data-i18n="pkg.cta.btn"><i class="fas fa-calendar-check"></i> Obtenir mon devis</a>
   </div>
 </div>
 
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-main">
-      <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a><p>Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p><div class="footer-nl"><input type="email" placeholder="Votre email" aria-label="Email newsletter" /><button type="button">S'abonner</button></div></div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="visage.html">Chirurgie du Visage</a></li><li><a href="silhouette.html">Chirurgie du Corps</a></li><li><a href="seins.html">Chirurgie des Seins</a></li><li></li></ul></div>
-      <div class="footer-col"><h5>La Société</h5><ul><li><a href="index.html#about">À Propos</a></li><li><a href="chirurgiens.html">Nos Chirurgiens</a></li><li><a href="index.html#garanties">Nos Garanties</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#">Mentions Légales</a></li></ul></div>
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="logo-emblem"><i class="fas fa-plus"></i></div><div class="logo-txt"><span class="logo-name">Beauty<span class="logo-med">Med</span></span><span class="logo-tag" data-i18n="common.tagline">Votre Beauté, Notre Excellence</span></div></a><p data-i18n="footer.brand">Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p><div class="footer-nl"><input type="email" data-i18n-placeholder="footer.email_ph" placeholder="Votre email" aria-label="Email newsletter" /><button type="button" data-i18n="footer.subscribe">S'abonner</button></div></div>
+      <div class="footer-col"><h5 data-i18n="footer.col1">Services</h5><ul><li><a href="visage.html" data-i18n="footer.svc.face">Chirurgie du Visage</a></li><li><a href="silhouette.html" data-i18n="footer.svc.body">Chirurgie du Corps</a></li><li><a href="seins.html" data-i18n="footer.svc.breast">Chirurgie des Seins</a></li><li></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col2">La Société</h5><ul><li><a href="index.html#about" data-i18n="footer.about">À Propos</a></li><li><a href="chirurgiens.html" data-i18n="footer.surgeons">Nos Chirurgiens</a></li><li><a href="index.html#garanties" data-i18n="footer.guarantees">Nos Garanties</a></li><li><a href="index.html#faq" data-i18n="footer.faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer.col3">Contact</h5><ul><li><a href="contact.html" data-i18n="footer.free_consult">Consultation gratuite</a></li><li><a href="tel:+21698000000">+216 98 000 000</a></li><li><a href="mailto:contact@beautymed.tn">contact@beautymed.tn</a></li><li><a href="#" data-i18n="footer.legal">Mentions Légales</a></li></ul></div>
     </div>
-    <div class="footer-bar"><p>© 2025 BeautyMed Tunisia. Tous droits réservés.</p><div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">CGU</a></div></div>
+    <div class="footer-bar"><p><span data-i18n="footer.copyright">© 2025 BeautyMed Tunisia. Tous droits réservés.</span></p><div class="footer-legal"><a href="#" data-i18n="footer.legal2">Mentions légales</a><a href="#" data-i18n="footer.gdpr">Confidentialité</a><a href="#" data-i18n="footer.terms">CGU</a></div></div>
   </div>
 </footer>
-<div class="wa-float"><span class="wa-float-tip">Contactez-nous sur WhatsApp</span><button class="wa-float-btn" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp"></i></button></div>
+<div class="wa-float"><span class="wa-float-tip" data-i18n="wa.tip">Contactez-nous sur WhatsApp</span><button class="wa-float-btn" onclick="window.open('https://wa.me/21698000000','_blank')"><i class="fab fa-whatsapp"></i></button></div>
 <button class="btt"><i class="fas fa-chevron-up"></i></button>
-<div class="cookie" role="alert"><p class="cookie-txt">Nous utilisons des cookies pour améliorer votre expérience. <a href="#">Politique de confidentialité</a>.</p><div class="cookie-btns"><button class="ck-accept">Accepter</button><button class="ck-decline">Refuser</button></div></div>
+<div class="cookie" role="alert"><p class="cookie-txt"><span data-i18n="cookie.text">Nous utilisons des cookies pour améliorer votre expérience.</span> <a href="#">Politique de confidentialité</a>.</p><div class="cookie-btns"><button class="ck-accept" data-i18n="cookie.accept">Accepter</button><button class="ck-decline" data-i18n="cookie.decline">Refuser</button></div></div>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

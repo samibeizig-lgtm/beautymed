@@ -213,13 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 
   /* ── Lang toggle ───────────────────────────────────────── */
-  (function initLang() {
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-  })();
+  if (typeof bmInitLang === 'function') bmInitLang();
 
 });
