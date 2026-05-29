@@ -220,6 +220,16 @@ const I18N = {
     'surg.clinic.1':'Clinique Prestige Tunis — ISO 9001, JCI Accredited',
     'surg.clinic.2':'Clinique Azzurra Hammamet — cadre balnéaire luxueux',
     'surg.clinic.3':'Clinique Élite Sousse — spécialiste silhouette',
+    // Médecine — meta & prix
+    'med.anest.none':'Sans anesthésie','med.anest.loc':'Locale / Sans','med.anest.loc2':'Locale',
+    'med.botox.time':'0 jour','med.hyalu.time':'0 – 2 jours',
+    'med.meso.time':'0 – 1 jour','med.peeling.time':'2 – 7 jours',
+    'med.botox.price':'Dès 150 €','med.botox.unit':'par zone',
+    'med.hyalu.price':'Dès 200 €','med.hyalu.unit':'par seringue',
+    'med.meso.price':'Dès 120 €','med.prp.price':'Dès 180 €',
+    'med.peeling.price':'Dès 90 €','med.per.session':'par séance',
+    'svc.free.cta':'Consultation gratuite',
+    'surg.cta.btn':'Prendre rendez-vous',
   },
 
   en: {
@@ -428,6 +438,16 @@ const I18N = {
     'surg.clinic.1':'Clinique Prestige Tunis — ISO 9001, JCI Accredited',
     'surg.clinic.2':'Clinique Azzurra Hammamet — luxury seaside setting',
     'surg.clinic.3':'Clinique Élite Sousse — body contouring specialist',
+    // Aesthetic medicine — meta & prices
+    'med.anest.none':'No anaesthesia','med.anest.loc':'Local / None','med.anest.loc2':'Local',
+    'med.botox.time':'Same day','med.hyalu.time':'0 – 2 days',
+    'med.meso.time':'0 – 1 day','med.peeling.time':'2 – 7 days',
+    'med.botox.price':'From €150','med.botox.unit':'per area',
+    'med.hyalu.price':'From €200','med.hyalu.unit':'per syringe',
+    'med.meso.price':'From €120','med.prp.price':'From €180',
+    'med.peeling.price':'From €90','med.per.session':'per session',
+    'svc.free.cta':'Free consultation',
+    'surg.cta.btn':'Book an appointment',
   },
 
   it: {
@@ -636,6 +656,16 @@ const I18N = {
     'surg.clinic.1':'Clinique Prestige Tunis — ISO 9001, JCI Accredited',
     'surg.clinic.2':'Clinique Azzurra Hammamet — contesto balneare di lusso',
     'surg.clinic.3':'Clinique Élite Sousse — specialista silhouette',
+    // Medicina estetica — meta & prezzi
+    'med.anest.none':'Senza anestesia','med.anest.loc':'Locale / Senza','med.anest.loc2':'Locale',
+    'med.botox.time':'Stesso giorno','med.hyalu.time':'0 – 2 giorni',
+    'med.meso.time':'0 – 1 giorno','med.peeling.time':'2 – 7 giorni',
+    'med.botox.price':'Da €150','med.botox.unit':'per zona',
+    'med.hyalu.price':'Da €200','med.hyalu.unit':'per siringa',
+    'med.meso.price':'Da €120','med.prp.price':'Da €180',
+    'med.peeling.price':'Da €90','med.per.session':'per seduta',
+    'svc.free.cta':'Consulenza gratuita',
+    'surg.cta.btn':'Prendere un appuntamento',
   }
 };
 
