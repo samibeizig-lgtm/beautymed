@@ -11,7 +11,7 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -68,150 +68,217 @@
 </nav>
 
 <section id="hero" aria-label="Accueil">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-eyebrow">Tourisme Médical &amp; Chirurgie Esthétique</div>
-      <h1 class="hero-title">
-        Révélez Votre<br>
-        <em>Plus Belle Version</em>
-      </h1>
-      <p class="hero-sub">
-        Accédez à une chirurgie esthétique d'excellence en Tunisie —
-        chirurgiens réputés, cliniques accréditées et forfaits tout inclus
-        conçus pour vous accompagner à chaque étape de votre transformation.
-      </p>
-      <div class="hero-ctas">
-        <a href="#services" class="btn btn-gold">
-          <i class="fas fa-sparkles"></i> Découvrir nos offres
-        </a>
-        <a href="contact.html" class="btn btn-outline-white">
-          <i class="fas fa-video"></i> Consultation gratuite
-        </a>
-      </div>
-      <div class="hero-trust" role="list">
-        <div class="trust-item" role="listitem">
-          <span class="trust-val">15+</span>
-          <span class="trust-lbl">Ans d'expérience</span>
+  <div class="hero-split">
+    <div class="hero-panel-left">
+      <div class="hero-panel-inner">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          Tourisme Médical · Tunisie
         </div>
-        <div class="trust-item" role="listitem">
-          <span class="trust-val">50+</span>
-          <span class="trust-lbl">Chirurgiens</span>
+        <h1 class="hero-title">
+          <span class="hero-title-lg">L'Art</span>
+          <span class="hero-title-sm">de vous</span>
+          <span class="hero-title-lg hero-title-italic">révéler</span>
+        </h1>
+        <p class="hero-sub">
+          Chirurgie esthétique d'excellence avec les meilleurs praticiens de Tunisie.
+          Forfaits tout inclus, suivi personnalisé, résultats naturels.
+        </p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn btn-gold"><span>Découvrir nos offres</span></a>
+          <a href="contact.html" class="btn btn-outline-white"><span><i class="fas fa-video"></i> Consultation vidéo gratuite</span></a>
         </div>
-        <div class="trust-item" role="listitem">
-          <span class="trust-val">10K+</span>
-          <span class="trust-lbl">Patients satisfaits</span>
-        </div>
-        <div class="trust-item" role="listitem">
-          <span class="trust-val">98%</span>
-          <span class="trust-lbl">Satisfaction</span>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-val">15+</span>
+            <span class="trust-lbl">Ans d'expérience</span>
+          </div>
+          <div class="trust-sep"></div>
+          <div class="trust-item">
+            <span class="trust-val">10K+</span>
+            <span class="trust-lbl">Patients satisfaits</span>
+          </div>
+          <div class="trust-sep"></div>
+          <div class="trust-item">
+            <span class="trust-val">98%</span>
+            <span class="trust-lbl">Satisfaction</span>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="hero-panel-right" aria-hidden="true">
+      <div class="hero-photo-frame">
+        <img
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85"
+          alt=""
+          class="hero-photo"
+        />
+        <div class="hero-badge">
+          <span class="hero-badge-num">−70%</span>
+          <span class="hero-badge-txt">vs tarifs<br>France</span>
+        </div>
+      </div>
+      <div class="hero-deco-line"></div>
     </div>
   </div>
 </section>
 
 <section id="services" aria-labelledby="services-title">
+  <header class="section-header reveal" style="padding:5rem 2rem 3rem;">
+    <span class="eyebrow">Nos Spécialités</span>
+    <h2 id="services-title">Nos Services par Catégorie</h2>
+    <div class="gold-rule"></div>
+    <p class="section-sub">Chirurgiens certifiés, cliniques accréditées, résultats naturels — tout inclus.</p>
+  </header>
+
+  <div class="svc-editorial">
+    <a href="visage.html" class="svc-ed-card reveal">
+      <div class="svc-ed-num">01</div>
+      <div class="svc-ed-photo">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Chirurgie du Visage" />
+        <div class="svc-ed-tag">Visage</div>
+      </div>
+      <div class="svc-ed-body">
+        <h3 class="svc-ed-title">Chirurgie du Visage</h3>
+        <p class="svc-ed-desc">Rhinoplastie, blépharoplastie, lifting facial, otoplastie. Révélez l'harmonie naturelle de votre visage avec nos chirurgiens référents.</p>
+        <div class="svc-ed-meta">
+          <span><strong>5</strong> procédures</span>
+          <span>À partir de <strong>900 €</strong></span>
+        </div>
+        <span class="svc-ed-link">Explorer la spécialité <span class="svc-ed-arrow">→</span></span>
+      </div>
+    </a>
+
+    <a href="silhouette.html" class="svc-ed-card svc-ed-reverse reveal delay-1">
+      <div class="svc-ed-num">02</div>
+      <div class="svc-ed-photo">
+        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=800&q=80" alt="Chirurgie de la Silhouette" loading="lazy" />
+        <div class="svc-ed-tag">Silhouette</div>
+      </div>
+      <div class="svc-ed-body">
+        <h3 class="svc-ed-title">Chirurgie de la Silhouette</h3>
+        <p class="svc-ed-desc">Liposuccion, abdominoplastie, BBL, lifting des bras et cuisses. Sculptez la silhouette de vos rêves avec précision chirurgicale.</p>
+        <div class="svc-ed-meta">
+          <span><strong>5</strong> procédures</span>
+          <span>À partir de <strong>1 500 €</strong></span>
+        </div>
+        <span class="svc-ed-link">Explorer la spécialité <span class="svc-ed-arrow">→</span></span>
+      </div>
+    </a>
+
+    <a href="seins.html" class="svc-ed-card reveal delay-2">
+      <div class="svc-ed-num">03</div>
+      <div class="svc-ed-photo">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Chirurgie des Seins" loading="lazy" />
+        <div class="svc-ed-tag">Seins</div>
+      </div>
+      <div class="svc-ed-body">
+        <h3 class="svc-ed-title">Chirurgie des Seins</h3>
+        <p class="svc-ed-desc">Augmentation, lifting, réduction. Des résultats naturels et proportionnés par des chirurgiens spécialisés.</p>
+        <div class="svc-ed-meta">
+          <span><strong>3</strong> procédures</span>
+          <span>À partir de <strong>2 000 €</strong></span>
+        </div>
+        <span class="svc-ed-link">Explorer la spécialité <span class="svc-ed-arrow">→</span></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="inclus-section">
   <div class="container">
     <header class="section-header reveal">
-      <span class="eyebrow">Nos Spécialités</span>
-      <h2 id="services-title">Nos Services par Catégorie</h2>
+      <span class="eyebrow" style="color:var(--gold-light);">Zéro surprise</span>
+      <h2 style="color:var(--white);">Tout est inclus, toujours</h2>
       <div class="gold-rule"></div>
-      <p class="section-sub">
-        Une gamme complète de procédures esthétiques assurées par des
-        chirurgiens certifiés dans nos cliniques partenaires accréditées.
-      </p>
+      <p class="section-sub" style="color:rgba(255,255,255,.5);">Chaque séjour intègre le Forfait Essentiel complet. Aucun frais caché, engagement écrit.</p>
     </header>
-
-    <div class="svc-grid">
-      <a href="visage.html" class="svc-card reveal delay-1">
-        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Chirurgie du Visage" class="svc-card-img" />
-        <div class="svc-card-body">
-          <div class="svc-card-icon"><i class="fas fa-spa"></i></div>
-          <div class="svc-card-title">Chirurgie du Visage</div>
-          <p class="svc-card-desc">Rhinoplastie, blépharoplastie, lifting facial, otoplastie et mentoplastie. Révélez l'harmonie naturelle de votre visage.</p>
-          <span class="svc-card-link">Explorer <i class="fas fa-arrow-right"></i></span>
+    <div class="inclus-timeline">
+      <div class="inclus-timeline-line"></div>
+      <div class="inclus-step reveal delay-1">
+        <div class="inclus-step-icon"><i class="fas fa-plane"></i></div>
+        <div class="inclus-step-num">01</div>
+        <div class="inclus-step-body">
+          <strong>Vol aller-retour</strong>
+          <span>Classe économique depuis Paris, Lyon, Bruxelles, Genève</span>
         </div>
-      </a>
-
-      <a href="silhouette.html" class="svc-card reveal delay-2">
-        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=600&q=80" alt="Chirurgie de la Silhouette" class="svc-card-img" loading="lazy" />
-        <div class="svc-card-body">
-          <div class="svc-card-icon"><i class="fas fa-star-of-life"></i></div>
-          <div class="svc-card-title">Chirurgie de la Silhouette</div>
-          <p class="svc-card-desc">Liposuccion, abdominoplastie, BBL, lifting des bras et des cuisses. Sculptez la silhouette de vos rêves.</p>
-          <span class="svc-card-link">Explorer <i class="fas fa-arrow-right"></i></span>
+      </div>
+      <div class="inclus-step reveal delay-2">
+        <div class="inclus-step-icon"><i class="fas fa-car"></i></div>
+        <div class="inclus-step-num">02</div>
+        <div class="inclus-step-body">
+          <strong>Transferts privés</strong>
+          <span>Aéroport · Clinique · Hôtel, véhicule climatisé</span>
         </div>
-      </a>
-
-      <a href="seins.html" class="svc-card reveal delay-3">
-        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Chirurgie des Seins" class="svc-card-img" loading="lazy" />
-        <div class="svc-card-body">
-          <div class="svc-card-icon"><i class="fas fa-heart"></i></div>
-          <div class="svc-card-title">Chirurgie des Seins</div>
-          <p class="svc-card-desc">Augmentation mammaire, lifting des seins, réduction mammaire. Des résultats naturels et proportionnés.</p>
-          <span class="svc-card-link">Explorer <i class="fas fa-arrow-right"></i></span>
+      </div>
+      <div class="inclus-step reveal delay-3">
+        <div class="inclus-step-icon"><i class="fas fa-stethoscope"></i></div>
+        <div class="inclus-step-num">03</div>
+        <div class="inclus-step-body">
+          <strong>Consultation pré-op</strong>
+          <span>Bilan complet, plan opératoire validé avec votre chirurgien</span>
         </div>
-      </a>
-
+      </div>
+      <div class="inclus-step reveal delay-4">
+        <div class="inclus-step-icon"><i class="fas fa-hotel"></i></div>
+        <div class="inclus-step-num">04</div>
+        <div class="inclus-step-body">
+          <strong>Hôtel 3★+ · 5 nuits</strong>
+          <span>Demi-pension, chambre de récupération confortable</span>
+        </div>
+      </div>
+      <div class="inclus-step reveal delay-1">
+        <div class="inclus-step-icon"><i class="fas fa-heart-pulse"></i></div>
+        <div class="inclus-step-num">05</div>
+        <div class="inclus-step-body">
+          <strong>Suivi post-op 3 mois</strong>
+          <span>Téléconsultations avec votre chirurgien depuis chez vous</span>
+        </div>
+      </div>
+      <div class="inclus-step reveal delay-2">
+        <div class="inclus-step-icon"><i class="fas fa-file-lines"></i></div>
+        <div class="inclus-step-num">06</div>
+        <div class="inclus-step-body">
+          <strong>Coordination complète</strong>
+          <span>Traductions, démarches, coordinatrice dédiée 24/7</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--cream); padding:4rem 0;">
-  <div class="container">
-    <header class="section-header reveal">
-      <span class="eyebrow">Tout Est Inclus</span>
-      <h2>Inclus dans Votre Séjour — Forfait Essentiel</h2>
-      <div class="gold-rule"></div>
-      <p class="section-sub">Chaque intervention intègre le Forfait Essentiel : vol, hôtel, transferts et suivi médical — aucun frais caché.</p>
-    </header>
-    <div class="inclus-grid reveal">
-      <div class="inclus-item">
-        <div class="inclus-icon"><i class="fas fa-plane"></i></div>
-        <span>Vol aller-retour (éco)</span>
-      </div>
-      <div class="inclus-item">
-        <div class="inclus-icon"><i class="fas fa-hotel"></i></div>
-        <span>Hôtel 3★ demi-pension — 5 nuits</span>
-      </div>
-      <div class="inclus-item">
-        <div class="inclus-icon"><i class="fas fa-car"></i></div>
-        <span>Transferts aéroport / clinique</span>
-      </div>
-      <div class="inclus-item">
-        <div class="inclus-icon"><i class="fas fa-stethoscope"></i></div>
-        <span>Consultation pré-opératoire</span>
-      </div>
-      <div class="inclus-item">
-        <div class="inclus-icon"><i class="fas fa-heart-pulse"></i></div>
-        <span>Suivi post-opératoire 3 mois</span>
-      </div>
-      <div class="inclus-item">
-        <div class="inclus-icon"><i class="fas fa-file-lines"></i></div>
-        <span>Traductions &amp; démarches administratives</span>
+<div class="stats-marquee-section" aria-label="Chiffres clés">
+  <div class="stats-marquee-inner">
+    <div class="stat-editorial reveal delay-1">
+      <span class="stat-editorial-num" data-count="15">15</span>
+      <div class="stat-editorial-meta">
+        <span class="stat-editorial-unit">ans</span>
+        <span class="stat-editorial-label">d'expérience<br>en tourisme médical</span>
       </div>
     </div>
-  </div>
-</section>
-
-<div class="stats-bar" aria-label="Chiffres clés">
-  <div class="stats-inner">
-    <div class="stat-item reveal delay-1">
-      <span class="stat-num" data-count="15" data-suffix=" ans">0 ans</span>
-      <span class="stat-label">D'expérience</span>
+    <div class="stat-editorial-sep"></div>
+    <div class="stat-editorial reveal delay-2">
+      <span class="stat-editorial-num" data-count="50">50</span>
+      <div class="stat-editorial-meta">
+        <span class="stat-editorial-unit">+</span>
+        <span class="stat-editorial-label">chirurgiens<br>certifiés experts</span>
+      </div>
     </div>
-    <div class="stat-item reveal delay-2">
-      <span class="stat-num" data-count="50" data-suffix="+">0+</span>
-      <span class="stat-label">Chirurgiens experts</span>
+    <div class="stat-editorial-sep"></div>
+    <div class="stat-editorial reveal delay-3">
+      <span class="stat-editorial-num" data-count="10000">10K</span>
+      <div class="stat-editorial-meta">
+        <span class="stat-editorial-unit">+</span>
+        <span class="stat-editorial-label">opérations<br>réussies depuis 2009</span>
+      </div>
     </div>
-    <div class="stat-item reveal delay-3">
-      <span class="stat-num" data-count="10000" data-suffix="+">0+</span>
-      <span class="stat-label">Opérations réussies</span>
-    </div>
-    <div class="stat-item reveal delay-4">
-      <span class="stat-num" data-count="98" data-suffix="%">0%</span>
-      <span class="stat-label">Taux de satisfaction</span>
+    <div class="stat-editorial-sep"></div>
+    <div class="stat-editorial reveal delay-4">
+      <span class="stat-editorial-num" data-count="98">98</span>
+      <div class="stat-editorial-meta">
+        <span class="stat-editorial-unit">%</span>
+        <span class="stat-editorial-label">taux de<br>satisfaction patients</span>
+      </div>
     </div>
   </div>
 </div>
@@ -418,12 +485,17 @@
 </section>
 
 <footer role="contentinfo">
+  <div class="footer-signature">
+    <div class="container">
+      <p class="footer-sig-text">L'excellence médicale, <em>à votre portée</em></p>
+    </div>
+  </div>
   <div class="container">
     <div class="footer-main">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><div class="logo-emblem" style="background:linear-gradient(135deg,#C9A96E,#9A7A45);">B</div><div class="logo-txt"><span class="logo-name" style="color:rgba(255,255,255,.9);">BeautyMed</span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a>
+        <a href="index.html" class="nav-logo"><div class="logo-emblem">B</div><div class="logo-txt"><span class="logo-name">BeautyMed</span><span class="logo-tag">Votre Beauté, Notre Excellence</span></div></a>
         <p>Votre partenaire de confiance pour la chirurgie esthétique et le tourisme médical en Tunisie depuis 2009.</p>
-        <div class="footer-nl"><input type="email" placeholder="Votre email" aria-label="Email newsletter" /><button type="button">S'abonner</button></div>
+        <div class="footer-nl"><input type="email" placeholder="Votre email" aria-label="Email newsletter" /><button type="button">→</button></div>
       </div>
       <div class="footer-col"><h5>Services</h5><ul><li><a href="visage.html">Chirurgie du Visage</a></li><li><a href="silhouette.html">Chirurgie du Corps</a></li><li><a href="seins.html">Chirurgie des Seins</a></li></ul></div>
       <div class="footer-col"><h5>La Société</h5><ul><li><a href="index.html#about">À Propos</a></li><li><a href="chirurgiens.html">Nos Chirurgiens</a></li><li><a href="index.html#garanties">Nos Garanties</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>

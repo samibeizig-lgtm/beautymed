@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (function initHeader() {
     const hdr = document.getElementById('header');
     if (!hdr) return;
-    const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 60);
+    const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 80);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   })();
@@ -82,7 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const progress = Math.min((now - start) / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           el.textContent = Math.floor(eased * target) + suffix;
-          if (progress < 1) requestAnimationFrame(step);
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.classList.add('counted');
+          }
         }
         requestAnimationFrame(step);
         io.unobserve(el);
@@ -218,6 +222,23 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+      });
+    });
+  })();
+
+  /* ── Card tilt (editorial service cards) ───────────────── */
+  (function initTilt() {
+    const cards = document.querySelectorAll('.svc-ed-card');
+    if (!cards.length) return;
+    cards.forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width  - 0.5;
+        const y = (e.clientY - rect.top)  / rect.height - 0.5;
+        card.style.transform = `perspective(900px) rotateY(${x * 4}deg) rotateX(${-y * 3}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
       });
     });
   })();
